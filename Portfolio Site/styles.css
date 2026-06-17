@@ -1,0 +1,146 @@
+:root{
+    --accent: #00f5c4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    background-color: #0d0d0f;
+    top: 0;
+    z-index: 100;
+}
+header nav a{
+    color: #e0e0e0;
+    margin-left: 2rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+header nav a:hover{
+    color: var(--accent);
+}
+#hero{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+}
+.hero-image img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+}
+#hero h1{
+    font-size: 3.5rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+#hero h2{
+    font-size: 2rem;
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+#hero p{
+    color: #a0a0a0;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+#hero a{
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0.6rem 1.5rem;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+    border-radius: 4px;
+}
+#hero a:hover{
+    background-color: var(--accent);
+    color: #0d0d0f;
+}
+#projects{
+    padding: 5rem 4rem;
+    min-height: 100vh;
+}
+#projects h2{
+    color: var(--accent);
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+.projects-grid{
+    display: grid;
+    grid-template-rows: 150px 150px;
+}
+#projects a{
+    display: inline-block;
+    border: 2px solid var(--accent);
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    color:var(--accent);
+    border-radius: 4px;
+}
+#projects a:hover{
+    background-color: var(--accent);
+    color: black;
+}
+#skills{
+    padding: 5rem 4rem;
+    min-height: 100vh;
+}
+#skills h2{
+    color: var(--accent);
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+.skills-list{
+    display: grid;
+    grid-template-rows: 60px 60px 60px 60px;
+}
+#contact{
+    padding: 5rem 4rem;
+    min-height: 60vh;
+}
+#contact h2{
+    color: var(--accent);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#contact p{
+    color:#e0e0e0;
+    margin-bottom: 0.5rem;
+}
+#contact a{
+    display: inline-block;
+    border: 2px solid var(--accent);
+    margin-right: 2rem;
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    color:var(--accent);
+    border-radius: 4px;
+}
+#contact a:hover{
+    background-color: var(--accent);
+    color: black;
+}
+footer{
+    text-align: center;
+    padding: 2rem;
+    background-color: #0d0d0f;
+}
