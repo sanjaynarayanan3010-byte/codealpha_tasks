@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="calcStyles.css">
+    </head>
+    <script src="calcScript.js"></script>
+    <title>
+        Calculator
+    </title>
+    <body>
+        <div class="calculator">
+        <div>
+            <input type="text" id="calcDisplay" placeholder="0">
+        </div>
+        <div class="buttons">
+            <button id="pow" onclick="getUserInput('^')">^</button>
+            <button id="openbracket" onclick="getUserInput('(')">(</button>
+            <button id="closebracket" onclick="getUserInput(')')">)</button>
+            <button id="backSpace" onclick="backspace()">&#9003</button>
+             <button id="9" onclick="getUserInput('9')">
+                9
+            </button>
+            <button id="8" onclick="getUserInput('8')">
+                8
+            </button>
+            <button id="7" onclick="getUserInput('7')">
+                7
+            </button>
+            <button id="+" onclick="getUserInput('+')">
+                +
+            </button>
+            <button id="4" onclick="getUserInput('4')">
+                4
+            </button>
+            <button id="5" onclick="getUserInput('5')">
+                5
+            </button>
+            <button id="6" onclick="getUserInput('6')">
+                6
+            </button>
+            <button id="-" onclick="getUserInput('-')">
+                -
+            </button>
+            <button id="3" onclick="getUserInput('3')">
+                3
+            </button>
+            <button id="2" onclick="getUserInput('2')">
+                2
+            </button>
+            <button id="1" onclick="getUserInput('1')">
+                1
+            </button>
+            <button id="*" onclick="getUserInput('*')">
+                x
+            </button>
+            <button id="0" onclick="getUserInput('0')">
+                0
+            </button>
+            <button id="=" onclick="calculate()">=</button>
+            <button id="AC" onclick="erase()">AC</button>
+            <button id="%" onclick="getUserInput('/')">
+                %
+            </button>
+        </div>
+    </body>
+</html>
